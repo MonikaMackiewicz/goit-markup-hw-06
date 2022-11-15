@@ -662,19 +662,18 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
   letter-spacing: 0.06em;
   color: var(--background);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 30px;
-  display: flex;
+  position: absolute;
+  left: 30%;
+  bottom: 40px;
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.policy {
+.policy-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -682,25 +681,38 @@ ul {
   letter-spacing: 0.03em;
   color: var(--less-i-tex);
   margin-top: 20px;
-}
-
-.policy-window {
   display: inline-flex;
   justify-content: center;
   align-items: baseline;
 }
 
-.policy-svg {
-  margin-right: 8px;
+.policy-window {
+  position: absolute;
+  margin: auto;
+  bottom: 127px;
+  left: 45px;
 }
 
-.policy-window::before {
+.policy-checkbox {
+  margin-top: 20px;
+  border: 3px solid var(--main-color);
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.policy-checkbox:checked {
+  background-color: var(--accent-color);
+}
+
+.policy-text::before {
   content: "";
 }
 
-.policy-window:hover,
-.policy-window:focus {
+.policy-text:hover,
+.policy-text:focus {
   stroke: var(--accent-color);
+  cursor: pointer;
 }
 
 .modal-button-2:hover,

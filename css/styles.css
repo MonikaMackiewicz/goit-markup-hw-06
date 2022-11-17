@@ -242,6 +242,7 @@ ul {
   gap: 30px;
   padding-left: 0;
 }
+
 .ul-display-2 > li {
   position: relative;
 }
@@ -372,6 +373,7 @@ ul {
 .wider {
   width: 1170px;
 }
+
 .frame {
   width: 170px;
   height: 92px;
@@ -690,7 +692,10 @@ ul {
   position: absolute;
   margin: auto;
   bottom: 127px;
-  left: 45px;
+  left: 40px;
+  height: 16px;
+  width: 15px;
+  visibility: hidden;
 }
 
 .policy-checkbox {
@@ -699,20 +704,31 @@ ul {
   border-radius: 4px;
   margin-right: 8px;
   position: relative;
+  width: 15px;
+  height: 16px;
 }
 
-.policy-checkbox:checked {
+.policy-window:checked + span svg {
   background-color: var(--accent-color);
-}
-
-.policy-text::before {
-  content: "";
+  border-radius: 4px;
+  width: 15px;
+  height: 16px;
+  border: 2px solid var(--accent-color);
 }
 
 .policy-text:hover,
 .policy-text:focus {
   stroke: var(--accent-color);
   cursor: pointer;
+}
+
+.policy-svg {
+  background-color: var(--background);
+  border-radius: 4px;
+  width: 15px;
+  height: 16px;
+  border: 2px solid var(--main-color);
+  justify-content: baseline;
 }
 
 .modal-button-2:hover,

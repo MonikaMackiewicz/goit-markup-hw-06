@@ -386,8 +386,7 @@
               <form>
               <h3 class="h3 logo-2">Zapisz się do newslettera</h3>
               <form name="signup_form" autocomplete="on" novalidate>
-                <label for="user_email"></label>
-                  <input class="email-input" type="email" name="email" id="user_email" placeholder="E-mail"/>
+                <input class="email-input" type="email" name="email" id="user_email" placeholder="E-mail"/>
               <button class="send" type="submit">Zapisz się<svg class="footer-svg-2" width="24px" height="24px">
               <use xlink:href="./images/icons.svg#icon-send"></use>
             </svg></button>
@@ -408,17 +407,15 @@
             <form>
               <p class="modal-h3">Zostaw swoje dane w formularzu poniżej</p>
               <form name="signup_form" autocomplete="on" novalidate>
-                <label>
-                  <p class="modal-p">Imie</p>
-                  <div class="input-div">
+                <label class="modal-label">
+                  <span class="modal-p">Imie</span>
                   <svg class="input-svg" width="18px" height="18px">
                   <use xlink:href="./images/icons.svg#icon-person-black-18dp-1"></use>
                   </svg>
                   <input class="modal-input" type="name" name="name" />
-                  </div>
                 </label>
-                <label>
-                  <p class="modal-p">Telefon</p>
+                <label class="modal-label">
+                  <span class="modal-p">Telefon</span>
                   <div class="input-div">
                   <svg class="input-svg" width="18px" height="18px">
                   <use xlink:href="./images/icons.svg#icon-phone-black-18dp-1"></use>
@@ -426,8 +423,8 @@
                   <input class="modal-input" type="phone" name="phone" />
                   </div>
                 </label>
-                <label>
-                  <p class="modal-p">Email</p>
+                <label class="modal-label">
+                  <span class="modal-p">Email</span>
                   <div class="input-div">
                   <input class="modal-input" type="email" name="email" />
                   <svg class="input-svg" width="18px" height="18px">
@@ -435,20 +432,20 @@
                   </svg>
                   </div>
                 </label>
-                <label>
-                  <p class="modal-p">Komentarz</p>
+                <label class="modal-label">
+                  <span class="modal-p modal-p-2">Komentarz</span>
                   <div class="modal-textarea">
                   <textarea class="modal-in-textarea" name="feedback" placeholder="Wprowadź tekst"></textarea>
                   </div>
                 </label>
-                <label>
-                 <input class="policy-window" type="checkbox" name="policy-checkbox" />
-                 <span> 
-                 <svg class="policy-svg" width="16px" height="15px">
+                <label class="label-policy">
+                  <input class="policy-window" type="checkbox" name="policy-checkbox" />
+                  <span> 
+                  <svg class="policy-svg" width="16px" height="15px">
                     <use xlink:href="./images/icons.svg#icon-checkbox"></use>
-                  </svg>
-                 </span>
-                 <p class="policy-text">Oświadczam iż akceptuję&nbsp<a href="/">Regulamin</a>&nbspi&nbsp<a href="/">Politykę Prywatności</a>.</p>
+                    </svg>
+                  </span>
+                  <p class="policy-text">Oświadczam iż akceptuję&nbsp<a href="/">Regulamin</a>&nbspi&nbsp<a href="/">Politykę Prywatności</a>.</p>
                 </label>
                 <button class="modal-button-2" type="submit">Wyślij</button>
               </form>
